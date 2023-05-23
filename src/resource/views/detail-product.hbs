@@ -1,0 +1,473 @@
+<button onclick="toggleCart()" style="float: right;position: absolute;transform: translate(1700% );" type="button" class="btn btn-dark m-4">
+    <i class="fa-solid fa-cart-shopping"></i>
+        <span class="badge p-0 text-white">0</span>
+</button>
+<div id="cartTable" class="showcart" style="display: none;">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Name</th>
+                <th scope="col">Image</th>
+                <th scope="col">Price</th>
+                <th scope="col">Size</th>
+                <th scope="col">Quantity</th>
+                <th scope="col" style="text-align: center;">Delete</th>
+            </tr>
+        </thead>
+        <tbody id="mycart">
+        </tbody>
+        <tfoot>
+            <tr id="totalRow">
+                <td colspan="6">Total:</td>
+                <td colspan="" class="total-price" id="totalPrice" style="text-align: center;"></td>
+            </tr>
+            <tr>
+                <td colspan="6"></td>
+                <td><a href="#" class="ordership">Order</a></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<nav aria-label="breadcrumb " style="background-color: #ffff;">
+        <ol class="breadcrumb m-0 p-4"  style="background-color: #ffff;">
+        <li class="breadcrumb-item"><a style=" text-decoration: none;" href="#">Home</a></li>
+        <li class="breadcrumb-item"><a style=" text-decoration: none;" href="#">Store</a></li>
+        <li class="breadcrumb-item"><a style=" text-decoration: none;" href="#">Men</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Product</li>
+        </ol>
+</nav>
+
+<div id="cartTable" class="showcart" style="display: none;" > 
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Quantity</th>
+                    </tr>
+                </thead>
+                <tbody id="mycart">
+                </tbody>
+            </table>
+</div>
+<div class="detail-product container-fluid p-5">
+
+    <div class="list-image">
+        <img  id="image" src="https://static.lamborghinistore.com/rx/1250x,ofmt_webp/media/catalog/product/1/6/16194llb000_01.jpg" alt="">
+        <div class="item-detail">
+            <ul class="item-image list-unstyled">
+                <li class="item-image-detail p-2"><img style="width: 200px; height: 290px; object-fit: cover;" src="https://static.lamborghinistore.com/rx/1250x,ofmt_webp/media/catalog/product/1/6/16194llb000_03.jpg" alt=""></li>
+                <li class="item-image-detail p-2"><img style="width: 200px; height: 290px; object-fit: cover;" src="https://static.lamborghinistore.com/rx/1250x,ofmt_webp/media/catalog/product/1/6/16194llb000_04.jpg" alt=""></li>
+                <li class="item-image-detail p-2"><img style="width: 200px; height: 290px; object-fit: cover;" src="https://static.lamborghinistore.com/rx/1250x,ofmt_webp/media/catalog/product/1/6/16194llb000_01.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="product-infomation p-5">
+        <span>SKU: 16194LLB000</span>
+        <h2 id="name">AUTOMOBILI LAMBORGHINI LEATHER BIKER JACKET</h2>
+        <h3 id="price" >852.00</h3>
+        <div class="choose">
+            <div class="choose-size">
+                <label for="exampleFormControlSelect">Size</label>
+                    <select class="form-control" id="exampleFormControlSelect">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select>
+            </div>
+            <div class="choose-quatity">
+            	<label for="size">Quantity</label>
+	        		<form action="#" class="display-flex d-flex">
+							    <div class="qtyminus"><i style="padding-top: 10px;" class="fa-solid fa-minus"></i></div>
+							    <input type="text" name="quantity" value="1" class="qty">
+							    <div class="qtyplus"><i style="padding-top: 10px;" class="fa-solid fa-plus"></i></div>
+					</form>  
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <button id="addtocart">Add to Cart</button>
+        </div>        
+        <div class="describe">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Description</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Shipping and returns</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Customer care</a>
+                </div>
+            </nav>
+                <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Automobili Lamborghini leather biker jacket. Custom metal shield logo on the left sleeve. Metal front zip and pocket zips. Inner pocket with zip. Inner with central panel and leather side trim in a contrasting colour. Made in Italy. Outer: 100% cowhide leatherInner: 53% viscose, 47% cupro</div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Shipping: The products will be delivered in 24/48 hours, delivery times may vary for countries outside the European Union.Please notice that the production time for pre-order products is approximately 60 days. Returns: The withdrawal right can be exercised within 14 working days from the goods delivery.Pre-order products are not eligible for return.</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">If you need assistance in order to improve your shopping experience, please don’t hesitate to contact us by phone at the following number (+39) 041/8380060 or by email at: customercare@lamborghinistore.com</div>
+            </div>
+        </div>
+        <div class="size-guide">
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target=".bd-example-modal-lg">Size guide</button>
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    <img src="/img/sz.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="showcart" hidden >
+    <h2>Your Cart</h2>
+    <span class="badge"></span>
+    <button id="showcartbutton">Show Cart</button>
+</div>
+<div class="make-you-like pt-5">
+    <h2 class="p-5">YOU MAY ALSO LIKE</h2>
+    <div id="carouselExampleControls" class="carousel slide pb-5" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="list-card container-fluid d-flex justify-content-center">
+                <a href="" style="text-decoration:none;">
+                    <div  class="col-md-4  pt-2">
+                        <div class="card" style="width: 18rem;">
+                            <div class="box-hover">
+                                <img src="" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">AUTOMOBILI LAMBORGHINI LEATHER BIKER JACKET</p>
+                                <p class="card-text text-center">$852.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="" style="text-decoration:none;">
+                    <div  class="col-md-4  pt-2">
+                        <div class="card" style="width: 18rem;">
+                            <div class="box-hover">
+                                <img src="" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">AUTOMOBILI LAMBORGHINI LEATHER BIKER JACKET</p>
+                                <p class="card-text text-center">$852.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="" style="text-decoration:none;">
+                    <div  class="col-md-4  pt-2">
+                        <div class="card" style="width: 18rem;">
+                            <div class="box-hover">
+                                <img src="" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">AUTOMOBILI LAMBORGHINI LEATHER BIKER JACKET</p>
+                                <p class="card-text text-center">$852.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="list-card container-fluid d-flex justify-content-center">
+                <a href="" style="text-decoration:none;">
+                    <div  class="col-md-4  pt-2">
+                        <div class="card" style="width: 18rem;">
+                            <div class="box-hover">
+                                <img src="" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">AUTOMOBILI LAMBORGHINI LEATHER BIKER JACKET</p>
+                                <p class="card-text text-center">$852.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="" style="text-decoration:none;">
+                    <div  class="col-md-4  pt-2">
+                        <div class="card" style="width: 18rem;">
+                            <div class="box-hover">
+                                <img src="" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">AUTOMOBILI LAMBORGHINI LEATHER BIKER JACKET</p>
+                                <p class="card-text text-center">$852.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="" style="text-decoration:none;">
+                    <div  class="col-md-4  pt-2">
+                        <div class="card" style="width: 18rem;">
+                            <div class="box-hover">
+                                <img src="" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">AUTOMOBILI LAMBORGHINI LEATHER BIKER JACKET</p>
+                                <p class="card-text text-center">$852.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="list-card container-fluid d-flex justify-content-center">
+                <a href="" style="text-decoration:none;">
+                    <div  class="col-md-4  pt-2">
+                        <div class="card" style="width: 18rem;">
+                            <div class="box-hover">
+                                <img src="" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">AUTOMOBILI LAMBORGHINI LEATHER BIKER JACKET</p>
+                                <p class="card-text text-center">$852.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="" style="text-decoration:none;">
+                    <div  class="col-md-4  pt-2">
+                        <div class="card" style="width: 18rem;">
+                            <div class="box-hover">
+                                <img src="" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">AUTOMOBILI LAMBORGHINI LEATHER BIKER JACKET</p>
+                                <p class="card-text text-center">$852.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="" style="text-decoration:none;">
+                    <div  class="col-md-4  pt-2">
+                        <div class="card" style="width: 18rem;">
+                            <div class="box-hover">
+                                <img src="" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text text-center">AUTOMOBILI LAMBORGHINI LEATHER BIKER JACKET</p>
+                                <p class="card-text text-center">$852.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+
+</div>
+
+<script>
+  const activeImage = document.querySelector(".list-image img");
+  const productImages = document.querySelectorAll(".item-image-detail img");
+  const itemDetail = document.querySelector('.item-detail');
+
+  function changeImage(e) {
+    activeImage.src = e.target.src;
+  }
+
+  function resetImage() {
+      activeImage.src = activeImage.src;
+      }
+
+  productImages.forEach(image => image.addEventListener("click", changeImage));
+  itemDetail.addEventListener('mouseleave', resetImage);
+</script>
+<script>
+  const quantityInput = document.querySelector(".qty");
+  const qtyMinusButton = document.querySelector(".qtyminus");
+  const qtyPlusButton = document.querySelector(".qtyplus");
+
+  qtyMinusButton.addEventListener("click", () => {
+    let currentValue = parseInt(quantityInput.value);
+    if (currentValue > 1) {
+      quantityInput.value = currentValue - 1;
+    }
+  });
+
+  qtyPlusButton.addEventListener("click", () => {
+    let currentValue = parseInt(quantityInput.value);
+    quantityInput.value = currentValue + 1;
+  });
+</script>
+
+<script>
+     function toggleCart() {
+        var cartTable = document.getElementById("cartTable");
+        if (cartTable.style.display === "none") {
+            cartTable.style.display = "block";
+        } else {
+            cartTable.style.display = "none";
+        }
+    }
+</script>
+<script>
+// Get the necessary elements
+const imageElement = document.getElementById('image');
+const nameElement = document.getElementById('name');
+const priceElement = document.getElementById('price');
+const sizeElement = document.getElementById('exampleFormControlSelect');
+const quantityElement = document.querySelector('input[name="quantity"]');
+const addToCartButton = document.getElementById('addtocart');
+const badgeSpan = document.querySelector('.badge');
+const cartTable = document.getElementById('cartTable');
+const cartTbody = document.getElementById('mycart');
+const showCartButton = document.getElementById('showcartbutton');
+const totalPriceCell = document.getElementById('totalPrice');
+
+// Load the cart items from localStorage on page load
+window.addEventListener('DOMContentLoaded', () => {
+    loadCartItems();
+    updateTotalPrice();
+});
+
+// Add event listener to the "Add to Cart" button
+addToCartButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the default form submit event
+
+    // Get the selected values
+    const image = imageElement.src;
+    const price = parseFloat(priceElement.textContent); // Convert price value to float
+    const name = nameElement.textContent;
+    const size = sizeElement.value;
+    const quantity = parseInt(quantityElement.value); // Convert quantity value to integer
+
+    // Create a new row for the cart table
+    const newRow = document.createElement('tr');
+    newRow.innerHTML = `
+        <th class="text-center">${cartTbody.children.length + 1}</th>
+        <td style="width:300px">${name}</td>
+        <td><img style="width:80px;height:110px;object-fit: cover;" src="${image}" alt=""></td>
+        <td class="text-center">${price}</td>
+        <td class="text-center">${size}</td>
+        <td class="text-center">${quantity}</td>
+        <td class="text-center"><button  class="delete-button">Delete</button></td>
+    `;
+
+    // Add the new row to the cart table
+    cartTbody.appendChild(newRow);
+
+    // Calculate the total price
+    let totalPrice = parseFloat(totalPriceCell.textContent);
+    totalPrice += quantity * price;
+
+    // Update the total price in the last row
+    totalPriceCell.textContent = totalPrice.toFixed(2);
+
+    // Save the cart items to localStorage
+    saveCartItems();
+
+    // Update the badge count
+    let currentValue = parseInt(badgeSpan.textContent) || 0;
+    badgeSpan.textContent = currentValue + 1;
+
+    // Show the cart table
+    cartTable.style.display = 'table';
+});
+
+// Function to load cart items from localStorage
+function loadCartItems() {
+    const savedItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    // Clear the existing rows in the cart table
+    cartTbody.innerHTML = '';
+
+    savedItems.forEach((item, index) => {
+        const newRow = document.createElement('tr');
+        newRow.innerHTML = `
+            <th class="text-center">${index + 1}</th>
+            <td style="width:300px">${item.name}</td>
+            <td><img style="width:80px;height:110px;object-fit: cover;" src="${item.image}" alt=""></td>
+            <td class="text-center">${item.price}</td>
+            <td class="text-center">${item.size}</td>
+            <td class="text-center">${item.quantity}</td>
+            <td class="text-center"><button class="delete-button" data-index="${index}">Delete</button></td>
+        `;
+
+        cartTbody.appendChild(newRow);
+    });
+
+    // Update the badge count
+    badgeSpan.textContent = savedItems.length;
+
+    // Hide the cart table if there are no items in it
+    const showCartTable = savedItems.length > 0 && cartTable.dataset.show === 'true';
+
+    // Add event listeners to delete buttons
+    const deleteButtons = document.querySelectorAll('.delete-button');
+    deleteButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            const index = parseInt(button.getAttribute('data-index'));
+            deleteCartItem(index);
+        });
+    });
+}
+
+// Function to save cart items to localStorage
+function saveCartItems() {
+    const cartItems = Array.from(cartTbody.children).map((row) => {
+        const name = row.children[1].textContent;
+        const image = row.children[2].querySelector('img').src;
+        const price = parseFloat(row.children[3].textContent);
+        const size = row.children[4].textContent;
+        const quantity = parseInt(row.children[5].textContent);
+        return { name, image, price, size, quantity };
+    });
+
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+    // Calculate the total price
+    let totalPrice = 0;
+    cartItems.forEach((item) => {
+        totalPrice += item.price * item.quantity;
+    });
+
+    totalPriceCell.textContent = totalPrice.toFixed(2); // Update the total price in the totalRow
+    localStorage.setItem('totalPrice', totalPrice.toFixed(2)); // Save the total price to localStorage
+}
+
+// Function to delete a cart item at a specific index
+function deleteCartItem(index) {
+    // Get the saved cart items from localStorage
+    let savedItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    // Remove the item at the specified index
+    const removedItem = savedItems.splice(index, 1)[0];
+
+    // Calculate the total price
+    let totalPrice = parseFloat(localStorage.getItem('totalPrice')) || 0;
+    totalPrice -= removedItem.price * removedItem.quantity;
+
+    // Save the updated cart items and total price to localStorage
+    localStorage.setItem('cartItems', JSON.stringify(savedItems));
+    localStorage.setItem('totalPrice', totalPrice.toFixed(2));
+
+    // Reload the cart items and update the total price
+    loadCartItems();
+    updateTotalPrice();
+    if (savedItems.length > 0) {
+        showCartButton.style.display = 'block';
+    }
+}
+
+// Function to update the total price
+function updateTotalPrice() {
+    const totalPrice = parseFloat(localStorage.getItem('totalPrice')) || 0;
+    totalPriceCell.textContent = totalPrice.toFixed(2);
+}
+
+</script>
